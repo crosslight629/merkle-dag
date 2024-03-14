@@ -14,13 +14,13 @@ type Node interface {
 type File interface {
 	Node
 
-	Bytes() []byte
+	Bytes() []byte //存储文件内容
 }
 
 type Dir interface {
 	Node
 
-	It() DirIterator
+	It() DirIterator //迭代器
 }
 
 type DirIterator interface {
